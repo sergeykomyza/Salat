@@ -1,0 +1,113 @@
+.best-price
+	padding: 12.1rem 0 6rem 0
+	background: $bg
+	overflow: hidden
+	&__title
+		margin: 0 0 4.6rem 0
+	&__slider
+		.slick-list
+			transform: translateX(5rem)
+			transition: transform 0.3s
+		.slick-track
+			margin: 0 0 2.3rem 0
+	&__decor
+		position: absolute
+		top: 12rem
+		left: calc(50% - 33.75rem)
+		width: 67.5rem
+
+.good
+	margin: 0 1.1rem
+	border-radius: 10px
+	background: #FFF
+	box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.05)
+	overflow: hidden
+	&:hover .good__img img
+		transform: scale(1.1)
+	&__img
+		height: 19.37rem
+		overflow: hidden
+		img
+			width: 100%
+			height: 100%
+			object-fit: cover
+			transition: transform 0.3s
+	&__info
+		display: flex
+		flex-direction: column
+		height: 13rem
+		padding: 1.2rem 0 1.2rem 2.1rem
+	&__name
+		height: 3rem
+		overflow: hidden
+		&:hover
+			color: $green
+	&__weight
+		margin: auto 0 0 0
+	&__price
+		margin: 0.7rem 0 0 0
+		font-size: $px20
+	&__purchase
+		margin: 0.6rem 0 0 0
+
+/* .purchase - блок с выбором кол-ва товаров и кнопкой - Беру! 
+	Есть в превью товара (good-purchase), в карточке товара (info-product__purchase) и в корзине (mini-good__purchase) */
+.purchase
+	display: flex
+	align-items: center
+	&__counter
+		display: flex
+		width: 6.25rem
+		height: 3.125rem
+		margin: 0 1.4rem 0 0
+		font-size: $px18
+		border: 2px solid #f2f2f2
+		border-radius: 3px
+
+.counter
+	&__minus
+		width: 30%
+		background: #FFF
+	&__val
+		width: 40%
+		text-align: center
+		background: #f2f2f2
+		border: none
+	&__plus
+		width: 30%
+		background: #FFF
+
+.animate-arrow
+	animation: 1s linear infinite arrow
+
+@keyframes arrow
+	0%
+		transform: translateY(0.8rem)
+	50%
+		transform: translateY(0rem)
+	100%
+		transform: translateY(0.8rem)
+
+@media screen and ( max-width: 992px )
+	.best-price
+		padding: 7rem 0
+	.good
+		&__info
+			padding: 1.2rem 1rem
+
+@media screen and ( max-width: 565px )
+	.best-price
+		&__decor
+			position: absolute
+			top: 11rem
+			left: calc(50% - 17rem)
+			width: 34rem
+	.slider-best
+		&__item
+			margin: 0 0.5rem
+	.good
+		&__img
+			height: 14rem
+		&__adds
+		&__counter
+			margin: 0 1rem 0 0

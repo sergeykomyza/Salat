@@ -1,0 +1,31 @@
+.category
+	padding: 5.5rem 0 12.5rem 0
+	background: $bg
+	&__title
+		margin: 0 0 5.6rem 0
+	&__goods
+		display: grid
+		grid-template-columns: repeat(6, 1fr)
+		gap: 2rem
+		margin: 0 0 5.2rem 0
+		padding: 0 2rem
+	.good
+		flex-shrink: 0
+		margin: 0
+
+@media screen and ( max-width: 1200px )
+	.category
+		&__goods
+			grid-template-columns: repeat(4, 1fr)
+
+@media screen and ( max-width: 992px )
+	.category
+		&__goods
+			grid-template-columns: repeat(3, 1fr)
+
+@media screen and ( max-width: 565px )
+	.category
+		&__goods
+			grid-template-columns: repeat(2, 1fr)
+			gap: 1rem
+			padding: 0 1rem

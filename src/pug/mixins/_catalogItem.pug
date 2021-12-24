@@ -1,0 +1,6 @@
+mixin catalogItem(img, name)
+	a.catalog__item(href="category.html") 
+		figure
+			.catalog__img
+				img(src="img/" + img, alt=name)
+			figcaption.catalog__name #{name}

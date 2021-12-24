@@ -1,0 +1,115 @@
+	
+.footer
+	display: flex
+	padding: 8.5rem 0 6.5rem 13rem
+	*
+		font-size: 0.75rem
+		color: $black
+	&__logo
+		flex-shrink: 0
+		margin: -3.5rem 9rem 0 0
+		img
+			width: 11rem
+			margin: 0 0 2rem 0
+		figcaption
+	&__menus
+		display: flex
+	&__col
+		margin: 0 7.5rem 0 0
+	&__title
+		margin: 0 0 1.5rem 0
+		display: inline-block
+		font-family: $font-2
+		font-size: $px20
+		font-weight: 700
+		border-bottom: 1px solid $green
+	&__info
+		p 
+			margin: 0 0 0.3rem 0
+.footer-menu
+	&__list
+	&__item
+		margin: 0 0 0.2rem 0
+	&__icon
+		width: 0.4rem
+		margin: 0 0.6rem 0 0
+	&__link
+		&:hover
+			color: $green
+
+.dev
+	display: flex
+	align-items: center
+	justify-content: space-between
+	padding: 1.3rem 15rem
+	background: $bg
+	> *
+		font-size: 0.75rem
+		color: $black
+		line-height: 1 
+	&__rights
+	&__socials
+	&__scrum
+		display: flex
+		align-items: center
+
+.socials
+	&__link
+		svg
+			width: 2.45rem
+			&:hover .st0
+				stroke: $green
+			&:hover .st1
+				fill: $green
+				transform: scale(1.1)
+				transform-origin: center
+		&:hover
+			border-bottom: none !important
+		.st0
+			fill: none
+			stroke: #6E7069
+			transition: all 0.3s
+		.st1
+			fill: #6E7069
+			transition: all 0.3s
+
+.scrum
+	&__text
+		margin: 0 1rem 0 0
+	&__logo
+
+@media screen and ( max-width: 1200px )
+	.footer
+		padding: 6.5rem 0 6.5rem 2rem
+		*
+			font-size: 0.9rem
+		&__col
+			margin: 0 4.5rem 0 0
+		&__title
+			font-size: $px20
+
+@media screen and ( max-width: 992px )
+	.footer
+		&__logo
+			margin: -3.5rem 3rem 0 0
+		&__menus
+			flex-wrap: wrap
+			justify-content: space-between
+		&__col
+			width: 49%
+			margin: 0 0 1rem 0
+	.dev
+		flex-direction: column
+		padding: 1.3rem
+		&__rights
+			margin: 0 0 1rem 0
+		&__socials
+			margin: 0 0 1rem 0
+
+
+@media screen and ( max-width: 565px )
+	.footer
+		flex-direction: column
+		padding: 2rem 1rem
+		&__logo
+			margin: 0 0 1rem 0

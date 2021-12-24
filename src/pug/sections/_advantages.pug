@@ -1,0 +1,15 @@
+include ./../mixins/_advantagesPreview.pug
+
+section.advantages
+	img.advantages__vegetables(src="img/vegetables-3.webp", alt="vegetables")
+	.center-box
+		h4.title.advantages__title Почему Салат?
+	.advantages__items 
+		+advantagesPreview('advantage-1.webp', 'Ручной сбор урожая', 'Собираем только самые свежие и спелые фрукты и овощи. Гарантируем, что в вашем заказе не будет ни одной не свежей ягоды, фрукта или овоща.')
+		+advantagesPreview('advantage-2.webp', 'Удобная доставка', 'Курьер приедет к вам в удобное время и место.')
+		+advantagesPreview('advantage-3.webp', 'Бережное хранение', 'Аккуратно упаковываем нежные ягоды и фрукты. Гарантируем, что ни одна ягодка не помнется')
+		+advantagesPreview('advantage-4.webp', 'Нет минимального заказа', 'Мы не ограничиваем вас суммой заказа. Привезем столько, сколько вы хотите - хоть маленькую корзинку, хоть ящик.')
+	.center-box 
+		button.button-red.advantages__more заказать
+	img.advantages__decor.decor(src="img/decor-2.webp", alt="decor")
+	img.mini-logo(src="img/circle-logo.png", alt="mini-logo")

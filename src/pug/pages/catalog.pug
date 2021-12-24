@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		include ./../sections/_head.pug
+		title Site | Каталог
+	body
+		// ======================================== HEADER
+		include ./../sections/_header.pug
+
+		include ./../mixins/_catalogItem.pug
+
+		.catalog-page.overflow-hidden
+			section.catalog 
+				img.catalog__decor.decor(src="img/decor-3.webp", alt="decor")
+				.center-box
+					h1.title.catalog__title Каталог
+				.catalog__items 
+					+catalogItem('catalog-1.webp', 'Фрукты')
+					+catalogItem('catalog-2.webp', 'Овощи')
+					+catalogItem('catalog-3.webp', 'Ягоды')
+					+catalogItem('catalog-4.webp', 'Бакалея')
+				.center-box 
+					button.button-red заказать по телефону
+
+			// ======================================== ИНТЕРНЕТ МАГАЗИН СВЕЖИХ И ЗДОРОВЫХ ПРОДУКТОВ
+			include ./../sections/_info.pug
+			// ======================================== ПОЧЕМУ САЛАТ
+			include ./../sections/_advantages.pug
+			// ======================================== ПОДПИСКА
+			include ./../sections/_subscription.pug
+		// ======================================== FOOTER
+		include ./../sections/_footer.pug
+		// ======================================== SCRIPTS
+		include ./../sections/_scripts.pug

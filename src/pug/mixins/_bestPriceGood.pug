@@ -1,0 +1,15 @@
+mixin bestPriceGood(img, name, price, className)
+	.good.js-item
+		figure.good__img
+			a(href="product.html") 
+				img(src="img/" + img, alt=name)
+		form.good__info(action="#")
+			a.good__name.elem-title(href="product.html") #{name}
+			p.good__weight 1кг
+			p.good__price #{price} руб.
+			.good__purchase.purchase
+				.purchase__counter.counter 
+					button.counter__minus -
+					input.counter__val(type="text" value="0")
+					button.counter__plus +
+				button.button-green Беру!

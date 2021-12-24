@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		include ./../sections/_head.pug
+		title Site | Корзина
+	body
+		// ======================================== HEADER
+		include ./../sections/_header.pug
+
+		include ./../mixins/_catalogItem.pug
+
+		.basket-page.overflow-hidden
+			section.basket
+				img.basket__decor.decor(src="img/decor-3.webp", alt="decor")
+				.center-box
+					h1.title.basket__title Корзина
+				form(action="").basket__order.ordered  
+					.ordered__goods
+						.ordered__good.mini-good
+							figure.mini-good__img
+								a(href="product.html") 
+									img(src="img/mini-good-1.webp", alt="good")
+							.mini-good__info
+								a(href="product.html").mini-good__name.elem-title Бананы Египет
+								p.mini-good__weight 1кг
+								p.mini-good__adds 
+									span.mini-good__price 129 руб
+							.mini-good__purchase.purchase
+								.purchase__counter.counter 
+									button.counter__minus -
+									input.counter__val(type="text" value="0")
+									button.counter__plus +
+								span.mini-good__price 25822 руб
+						.ordered__good.mini-good
+							figure.mini-good__img
+								a(href="product.html") 
+									img(src="img/mini-good-1.webp", alt="good")
+							.mini-good__info
+								a(href="product.html").mini-good__name.elem-title Хурма сладкая дальневосточная на банан похожая 
+								p.mini-good__weight 1кг
+								p.mini-good__adds 
+									span.mini-good__price 129 руб
+							.mini-good__purchase.purchase
+								.purchase__counter.counter 
+									button.counter__minus -
+									input.counter__val(type="text" value="0")
+									button.counter__plus +
+								span.mini-good__price 129 руб
+						.ordered__good.mini-good
+							figure.mini-good__img
+								a(href="product.html") 
+									img(src="img/mini-good-1.webp", alt="good")
+							.mini-good__info
+								a(href="product.html").mini-good__name.elem-title Бананы Египет
+								p.mini-good__weight 1кг
+								p.mini-good__adds 
+									span.mini-good__price 129 руб
+							.mini-good__purchase.purchase
+								.purchase__counter.counter 
+									button.counter__minus -
+									input.counter__val(type="text" value="0")
+									button.counter__plus +
+								span.mini-good__price 129 руб
+					.ordered__registration.registration
+						.registration__info
+							.registration__item 
+								span.registration__text Кол-во товаров
+								b.registration__val 3
+							.registration__item 
+								span.registration__text Вес посылки
+								b.registration__val 4,5 кг
+							.registration__item
+								span.registration__text Стоимость продуктов
+								b.registration__val 435 ₽
+						button.registration__button.button-red оформить заказ
+						p.registration__agree 
+							| Нажимая кнопку “Оформить заказ” вы соглашаетесь на 
+							a(href="/") обработку 	
+							| личных данных
+						.registration__promocode.promocode
+							span.promocode__text У меня есть промокод
+							.promocode__box
+								input.promocode__input(type="text" placeholder="Промокод")
+								button.promocode__btn
+									i.fas.fa-check
+
+			// ======================================== ПОЧЕМУ САЛАТ
+			include ./../sections/_advantages.pug
+			// ======================================== ПОДПИСКА
+			include ./../sections/_subscription.pug
+		// ======================================== FOOTER
+		include ./../sections/_footer.pug
+		// ======================================== SCRIPTS
+		include ./../sections/_scripts.pug

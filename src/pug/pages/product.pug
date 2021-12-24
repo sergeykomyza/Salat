@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		include ./../sections/_head.pug
+		title Site | Товар
+	body 
+	
+		// ======================================== HEADER
+		include ./../sections/_header.pug
+		.product-page.overflow-hidden
+			// ======================================== PRODUCT
+			section.product
+				.product__slider.slider-product
+					.slider-product__gallery.slider-nav 
+						.slider-nav__item
+							img(src="img/product-slider-1.png", alt="nav-slide")
+						.slider-nav__item
+							img(src="img/product-slider-2.png", alt="nav-slide")
+						.slider-nav__item
+							img(src="img/product-slider-3.png", alt="nav-slide")
+						.slider-nav__item
+							img(src="img/product-slider-4.png", alt="nav-slide")
+						.slider-nav__item
+							img(src="img/product-slider-1.png", alt="nav-slide")
+					.slider-product__big.slider-for
+						img.slider-for__item(src="img/product-slider-1.png", alt="for-slide")
+						img.slider-for__item(src="img/product-slider-2.png", alt="for-slide")
+						img.slider-for__item(src="img/product-slider-3.png", alt="for-slide")
+						img.slider-for__item(src="img/product-slider-4.png", alt="for-slide")
+						img.slider-for__item(src="img/product-slider-1.png", alt="for-slide")
+				.product__info.info-product 
+					h1.info-product__title.title Апельсин сицилийский
+					p.info-product__val Страна происхождения: Турция
+					p.info-product__val Цена указана за 1кг
+					p.info-product__val
+						| Сладкие, сочные апельсины.
+						br
+						| Вкус и аромат лета на вашем столе.
+					p.info-product__price 275 руб 
+					span.info-product__notavailable Нет в наличии
+					.info-product__purchase.purchase
+						.purchase__counter.counter 
+							button.counter__minus -
+							input.counter__val(type="text" value="0")
+							button.counter__plus +
+						button.button-green Беру!
+					button.button-red.info-product__button заказать по телефону
+
+			// ======================================== ЛУЧШАЯ ЦЕНА
+			include ./../sections/_bestPrice.pug
+			// ======================================== ИНТЕРНЕТ МАГАЗИН СВЕЖИХ И ЗДОРОВЫХ ПРОДУКТОВ
+			include ./../sections/_info.pug
+			// ======================================== ПОЧЕМУ САЛАТ
+			include ./../sections/_advantages.pug
+			// ======================================== ПОДПИСКА
+			include ./../sections/_subscription.pug
+		// ======================================== FOOTER
+		include ./../sections/_footer.pug
+		// ======================================== SCRIPTS
+		include ./../sections/_scripts.pug

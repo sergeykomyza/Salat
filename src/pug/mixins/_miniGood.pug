@@ -1,0 +1,11 @@
+mixin miniGood(img, name, price)
+	.goods__item.mini-good
+		figure.mini-good__img 
+			a(href="product.html") 
+				img(src="img/" + img, alt=name)
+		form.mini-good__info(action="#") 
+			a.mini-good__name.elem-title(href="product.html") #{name}
+			p.mini-good__weight 1кг
+			p.mini-good__adds 
+				span.mini-good__price #{price} руб 
+				button.button-green Беру!

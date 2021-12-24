@@ -1,0 +1,84 @@
+.product
+	position: relative
+	z-index: 1
+	display: flex
+	justify-content: center
+	padding: 5.625rem 0
+	background: $grey
+	box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1)
+	&__slider
+		display: flex
+		height: 30rem
+		margin: 0 4.25rem 0 0
+	&__info
+		display: flex
+		flex-direction: column
+		align-items: flex-start
+
+.slider-product
+	&__gallery
+		width: 8.6875rem
+		margin: 0 0.5rem 0 0
+		overflow: hidden
+		.slick-list
+			/*доб. отступ, чтобы не обрезало тень от слайдов*/
+			padding: 0 1rem 
+	&__big
+		width: 25rem
+		height: 100%
+		background: #FFF
+		border-radius: 10px
+		box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.05)
+		overflow: hidden
+		.slick-list,
+		.slick-track
+			height: 100%
+
+.slider-nav
+	&__item
+		width: 100%
+		height: 7.5rem !important
+		margin: 0 0 1.25rem 0
+		background: #FFF
+		border: none !important
+		border-radius: 10px
+		box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.05)
+		overflow: hidden
+		img
+			width: 100%
+			height: 100%
+			object-fit: cover
+
+.slider-for
+	&__item
+		width: 100%
+		height: 100%
+		object-fit: cover
+
+.info-product
+	&__title
+		margin: 0 0 1.8rem 0
+	&__val
+		margin: 0 0 1.1rem 0
+	&__price
+		margin: 1.4rem 0 0.2rem 0
+		font-size: $px20
+	&__notavailable
+		margin: 0 0 2.7rem 0
+		font-size: $px14
+		color: $red
+	&__purchase
+		margin: 0 0 2.7rem 0
+
+@media screen and ( max-width: 992px )
+	.product
+		flex-direction: column
+		&__slider
+			margin: 0 0 1rem 0
+			padding: 0 1rem 0 0
+		&__info
+			padding: 0 1rem
+
+	.slider-product
+		&__big
+			width: 100%

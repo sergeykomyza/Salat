@@ -1,0 +1,36 @@
+.advantages
+	padding: 6.2rem 0 7.2rem 0
+	background: $bg
+	&__vegetables
+		position: absolute
+		top: -13rem
+		left: calc(50% - 12.7rem)
+		width: 25.375rem
+	&__title
+		margin: 0 0 4.7rem 0
+	&__items
+		@extend .news__items
+	&__decor
+		position: absolute
+		bottom: 1rem
+		left: calc(50% - 38rem)
+		width: 76rem
+		pointer-events: none
+
+@media screen and ( max-width: 992px )
+	.advantages
+		padding: 7rem 1rem
+
+@media screen and ( max-width: 565px )
+	.advantages
+		&__decor
+			position: absolute
+			bottom: 1rem
+			left: calc(50% - 17rem)
+			width: 34rem
+			pointer-events: none
+		&__vegetables
+			position: absolute
+			top: -8rem
+			left: calc(50% - 9rem)
+			width: 18rem

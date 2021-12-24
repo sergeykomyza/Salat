@@ -1,0 +1,23 @@
+include ./../mixins/_miniGood.pug
+
+section.goods
+	.goods__col
+		.title.goods__title Хит продаж
+		.goods__items
+			+miniGood('mini-good-1.webp', 'Бананы Египет', '129')
+			+miniGood('mini-good-4.webp', 'Апельсины', '129')
+			+miniGood('mini-good-7.webp', 'Мандарины Марокко', '129')
+	.goods__col
+		.title.goods__title Новые поступления
+		.goods__items
+			+miniGood('mini-good-2.webp', 'Ананас', '129')
+			+miniGood('mini-good-5.webp', 'Кокос Куба', '1039')
+			+miniGood('mini-good-8.webp', 'Персик Крым', '89')
+	.goods__col
+		.title.goods__title Акции
+		.goods__items
+			+miniGood('mini-good-3.webp', 'Коробка фруктов', '129')
+			+miniGood('mini-good-6.webp', 'Коробка овощей', '1039')
+			+miniGood('mini-good-9.webp', 'Коробка ягод', '89')
+
+

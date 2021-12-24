@@ -1,0 +1,16 @@
+include ./../mixins/_newPreview.pug
+
+section.news
+	img.news__vegetables(src="img/vegetables.webp", alt="vegetables")
+	.center-box 
+		h2.title.news__title Свежие новости
+	.news__items
+		+newPreview('new-1.webp', 'Заголовок Статьи', 'Небольшой текст о самой статье для привлечения внимания')
+		+newPreview('new-2.webp', 'Заголовок Статьи', 'Небольшой текст о самой статье для привлечения внимания')
+		+newPreview('new-3.webp', 'Заголовок Статьи', 'Небольшой текст о самой статье для привлечения внимания')
+		+newPreview('new-4.webp', 'Заголовок Статьи', 'Небольшой текст о самой статье для привлечения внимания')
+	.center-box 
+		a.button-red.news__more(href="news.html") все статьи
+	img.news__decor.decor(src="img/decor-2.webp", alt="decor")
+	img.mini-logo(src="img/circle-logo.png", alt="mini-logo")
+

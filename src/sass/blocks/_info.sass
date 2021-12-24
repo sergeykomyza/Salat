@@ -1,0 +1,52 @@
+.info
+	padding: 7.7rem 0
+	&__vegetables
+		position: absolute
+		top: -7rem
+		left: calc(50% - 8.85rem)
+		width: 17.69rem
+	&__title
+		margin: 0 0 1.6rem 0
+	&__img
+		display: block
+		width: 76.875rem
+		margin: 0 auto 2rem auto
+	&__content
+		display: flex
+		justify-content: center
+
+.content-info
+	&__col
+		width: 31.25rem
+		margin: 0 2rem
+	&__title
+		margin: 0 0 1.8rem 0
+	p
+		margin: 0 0 1.6rem 0
+		font-size: $px14
+	ul
+		padding: 0 0 0 2rem
+		li
+			margin: 0 0 0.3rem 0
+			a 
+				font-size: $px14
+				color: $green
+				text-decoration: underline
+				&:hover
+					text-decoration: none
+
+@media screen and ( max-width: 992px )
+	.info
+		padding: 7rem 1rem
+		&__img
+			width: 100%
+
+@media screen and ( max-width: 565px )
+	.info
+		&__content
+			flex-direction: column
+
+	.content-info
+		&__col
+			width: 100%
+			margin: 0 0 2rem 0

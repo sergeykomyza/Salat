@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		include ./../sections/_head.pug
+		title Site | Категория
+	body
+		// ======================================== HEADER
+		include ./../sections/_header.pug
+		.category-page.overflow-hidden
+			include ./../mixins/_bestPriceGood.pug
+			section.category
+				img.best-price__decor.decor(src="img/decor.webp", alt="decor")
+				.center-box 
+					h1.category__title.title Фрукты
+				.category__goods.js-items
+					+bestPriceGood('good-1.webp', 'Хурма Медовая Восточная', '275')
+					+bestPriceGood('good-2.webp', 'Яблоки Голден', '119')
+					+bestPriceGood('good-3.webp', 'Томаты Чери Кубанские', '189')
+					+bestPriceGood('good-4.webp', 'Огурцы Корнишоны Тепличные', '275')
+					+bestPriceGood('good-5.webp', 'Манго Желтое Таиланд', '1527')
+					+bestPriceGood('good-1.webp', 'Хурма Медовая Восточная', '275')
+					+bestPriceGood('good-2.webp', 'Яблоки Голден', '119')
+					+bestPriceGood('good-1.webp', 'Хурма Медовая Восточная', '275')
+					+bestPriceGood('good-2.webp', 'Яблоки Голден', '119')
+					+bestPriceGood('good-3.webp', 'Томаты Чери Кубанские', '189')
+					+bestPriceGood('good-4.webp', 'Огурцы Корнишоны Тепличные', '275')
+					+bestPriceGood('good-5.webp', 'Манго Желтое Таиланд', '1527')
+					+bestPriceGood('good-1.webp', 'Хурма Медовая Восточная', '275')
+					+bestPriceGood('good-2.webp', 'Яблоки Голден', '119')
+					+bestPriceGood('good-1.webp', 'Хурма Медовая Восточная', '275')
+					+bestPriceGood('good-2.webp', 'Яблоки Голден', '119')
+					+bestPriceGood('good-3.webp', 'Томаты Чери Кубанские', '189')
+					+bestPriceGood('good-4.webp', 'Огурцы Корнишоны Тепличные', '275')
+				.center-box 
+					button.button-red.js-more показать еще
+			// ======================================== ИНТЕРНЕТ МАГАЗИН СВЕЖИХ И ЗДОРОВЫХ ПРОДУКТОВ
+			include ./../sections/_info.pug
+			// ======================================== ПОЧЕМУ САЛАТ
+			include ./../sections/_advantages.pug
+			// ======================================== ПОДПИСКА
+			include ./../sections/_subscription.pug
+		// ======================================== FOOTER
+		include ./../sections/_footer.pug
+		// ======================================== SCRIPTS
+		include ./../sections/_scripts.pug

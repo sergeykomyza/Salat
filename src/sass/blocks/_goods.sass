@@ -1,0 +1,106 @@
+.goods
+	display: flex
+	justify-content: center
+	padding: 7.7rem 0 11.5rem 0
+	background: $bg
+	&__col
+		margin: 0 2.5rem
+	&__title
+		display: inline-block
+		margin: 0 0 4rem 0
+	&__item
+		width: 31.25rem
+		margin: 0 0 2rem 0
+
+.mini-good
+	display: flex
+	height: 10rem
+	background: #FFF
+	box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.05)
+	border-radius: 0.65rem
+	overflow: hidden
+	&:hover .mini-good__img img
+		transform: scale(1.1)
+	&__img
+		flex-shrink: 0
+		width: 13.75rem
+		height: 100%
+		overflow: hidden
+		img
+			width: 100%
+			height: 100%
+			object-fit: cover
+			transition: transform 0.3s
+	&__info
+		display: flex
+		flex-direction: column
+		flex-grow: 1
+		padding: 1.3rem 0 1.8rem 1rem
+	&__name
+		margin: 0 0 0.5rem 0
+		&:hover
+			color: $green
+	&__weight
+	/* mini-good__adds - блок с ценой и кнопкой - Беру!
+		Есть в маленьком превью товара (которое без выбора кол-ва) на главной и в корзине (там только цена без кнопки - Беру!)*/
+	&__adds
+		display: flex
+		align-items: center
+		margin: auto 0 0 0
+	&__price
+		margin: 0 3rem 0 0
+		font-size: $px20
+	/* mini-good__purchase - этот блок есть только в превью товара, которые выводятся в корзине */
+	&__purchase
+		flex-shrink: 0
+		justify-content: space-between
+		width: 18rem
+		padding: 0 3rem 0 0
+		*
+			margin: 0
+
+@media screen and ( max-width: 1200px )
+	.goods
+		&__col
+			margin: 0 0.5rem
+		&__item
+			margin: 0 0 0.5rem 0
+
+@media screen and ( max-width: 992px )
+	.goods
+		flex-direction: column
+		padding: 7rem 1rem
+		&__col
+			margin: 0 0 1rem 0
+			text-align: center
+		&__items
+			display: flex
+			flex-wrap: wrap
+			align-items: center
+			justify-content: space-between
+			text-align: left
+		&__item
+			width: 49%
+			margin: 0 0 1rem 0
+
+	.mini-good
+		&__img
+			width: 10rem
+		&__price
+			margin: 0 1rem 0 0
+
+@media screen and ( max-width: 565px )
+	.goods
+		&__item
+
+	.mini-good
+		flex-direction: column
+		height: auto
+		&__img
+			width: 100%
+			height: 10rem
+		&__purchase
+			flex-direction: column
+			align-items: flex-start
+			width: 100%
+			padding: 0 1rem 1rem
