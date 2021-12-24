@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!-- favicon-->
+    <link rel="stylesheet" href="img/favicon.ico" type="image/x-icon"/>
+    <!-- fontawesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.6/css/all.css"/>
+    <!-- fancybox-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"/>
+    <!-- slick slider-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <!-- bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous"/>
+    <!-- animate css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+    <!-- styles-->
+    <link rel="stylesheet" href="css/main.css"/>
+    <title>Site | Контакты</title>
+  </head>
+  <body>
+    <!-- ======================================== HEADER-->
+    <header class="header">
+      <button class="header__button" id="open-catalog"> 
+        <svg viewBox="0 0 30 30">
+          <g>
+            <path class="st0" d="M27,8.2H3c-0.8,0-1.5-0.7-1.5-1.5v0c0-0.8,0.7-1.5,1.5-1.5H27c0.8,0,1.5,0.7,1.5,1.5v0				C28.5,7.5,27.8,8.2,27,8.2z"></path>
+            <path class="st0" d="M11.4,15.8H3c-0.8,0-1.5-0.7-1.5-1.5v0c0-0.8,0.7-1.5,1.5-1.5h8.3c0.8,0,1.5,0.7,1.5,1.5v0				C12.9,15.1,12.2,15.8,11.4,15.8z"></path>
+            <path class="st0" d="M12.8,23.4H3c-0.8,0-1.5-0.7-1.5-1.5v0c0-0.8,0.7-1.5,1.5-1.5h9.7c0.8,0,1.5,0.7,1.5,1.5v0				C14.3,22.7,13.6,23.4,12.8,23.4z"></path>
+            <g>
+              <path class="st0" d="M26.2,20.5l1.8,1.8c0.6,0.6,0.6,1.5,0,2.1l0,0c-0.6,0.6-1.5,0.6-2.1,0l-1.8-1.8c-0.6-0.6-0.6-1.5,0-2.1l0,0					C24.7,19.9,25.6,19.9,26.2,20.5z"></path>
+              <path class="st0" d="M21.1,10.8c-3.5,0-6.3,2.8-6.3,6.3c0,3.5,2.8,6.3,6.3,6.3s6.3-2.8,6.3-6.3C27.4,13.6,24.6,10.8,21.1,10.8z					M21.1,20.3c-1.8,0-3.3-1.5-3.3-3.3s1.5-3.3,3.3-3.3c1.8,0,3.3,1.5,3.3,3.3S22.9,20.3,21.1,20.3z"></path>
+            </g>
+          </g>
+        </svg>каталог
+      </button>
+      <ul class="header__menu menu">
+        <li class="menu__item"><a class="menu__link" href="sales.html">Акции</a></li>
+        <li class="menu__item"><a class="menu__link" href="about.html">О компании</a></li>
+        <li class="menu__item"><a class="menu__link" href="payment.html">Оплата и доставка</a></li>
+        <li class="menu__item"><a class="menu__link" href="news.html">Новости</a></li>
+        <li class="menu__item"><a class="menu__link" href="contacts.html">Контакты</a></li>
+      </ul><a class="header__logo" href="index.html"> <img src="img/logo.png" alt="logo"/></a><a class="header__phone" href="tel:+73333333333">(495) 123 45 67</a><a class="header__mail" href="mailto:hello@salat.ru">hello@salat.ru</a>
+      <div class="header__search search">
+        <input class="search__input" type="search" placeholder="Искать"/>
+        <button class="search__btn"> 
+          <svg viewBox="0 0 30 30">
+            <path class="st0" d="M13.5,7.1c-3.7,0-6.7,3-6.7,6.7c0,3.7,3,6.7,6.7,6.7c3.7,0,6.7-3,6.7-6.7C20.2,10.1,17.2,7.1,13.5,7.1z				M13.5,19c-2.9,0-5.2-2.3-5.2-5.2s2.3-5.2,5.2-5.2s5.2,2.3,5.2,5.2S16.4,19,13.5,19z"></path>
+            <rect class="st0" x="18.8" y="17.2" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -8.364 19.8584)" width="1.9" height="5.6"></rect>
+          </svg>
+        </button>
+      </div><a class="header__cart cart" href="basket.html"> 
+        <div class="cart__num">3</div>
+        <svg viewBox="0 0 30 30">
+          <g>
+            <g>
+              <g>
+                <path class="st0" d="M20.2,6.8c-0.3-0.8-1-1.3-1.8-1.3H11c-0.8,0-1.6,0.5-1.8,1.3l-1.3,4h1.8l1.1-3.4c0-0.1,0.1-0.2,0.3-0.2h7.3						c0.1,0,0.2,0.1,0.3,0.2l1.1,3.4h1.8L20.2,6.8z"></path>
+                <path class="st0" d="M23.8,12.1H5.5c-0.3,0-0.6,0.2-0.6,0.6v2.8c0,0.3,0.2,0.6,0.6,0.6h1l1.1,7.4c0.1,0.5,0.5,0.9,1.1,0.9h12						c0.5,0,1-0.4,1.1-0.9l1.1-7.4h1c0.3,0,0.6-0.2,0.6-0.6v-2.8C24.4,12.4,24.1,12.1,23.8,12.1z M11.6,21.3c0,0.5-0.4,0.8-0.8,0.8						s-0.8-0.4-0.8-0.8v-3.6c0-0.5,0.4-0.8,0.8-0.8s0.8,0.4,0.8,0.8V21.3z M15.5,21.3c0,0.5-0.4,0.8-0.8,0.8s-0.8-0.4-0.8-0.8v-3.6						c0-0.5,0.4-0.8,0.8-0.8s0.8,0.4,0.8,0.8V21.3z M19.4,21.3c0,0.5-0.4,0.8-0.8,0.8s-0.8-0.4-0.8-0.8v-3.6c0-0.5,0.4-0.8,0.8-0.8						s0.8,0.4,0.8,0.8V21.3z"></path>
+              </g>
+            </g>
+          </g>
+        </svg></a>
+    </header>
+    <nav class="menu-catalog" id="menu-catalog">
+      <ul class="menu-catalog__list">
+        <li class="menu-catalog__item active"><img class="menu-catalog__icon" src="img/icon_catalog_fruit.svg" alt="icon"/><span class="menu-catalog__name">Фрукты</span>
+          <svg class="menu-catalog__arrow" viewBox="0 0 14 14">
+            <polygon class="st0" points="9.2,6.5 5.1,2.4 4.2,3.3 8.2,7.4 4.2,11.5 5.1,12.4 9.2,8.3 10.1,7.4 "></polygon>
+          </svg>
+          <ul class="menu-catalog__sublist catalog-sublist">
+            <li class="catalog-sublist__title"><a class="catalog-sublist__name" href="category.html"> </a></li>
+            <li class="catalog-sublist__item"><a class="catalog-sublist__link" href="/">Яблоки</a></li>
+            <li class="catalog-sublist__item"><a class="catalog-sublist__link" href="/">Груши</a></li>
+            <li class="catalog-sublist__item"><a class="catalog-sublist__link" href="/">Сливы</a></li>
+            <li class="catalog-sublist__item"><a class="catalog-sublist__link" href="/">Бананы</a></li>
+            <li class="catalog-sublist__item"><a class="catalog-sublist__link" href="/">Ананасы</a></li>
+            <li class="catalog-sublist__item"><a class="catalog-sublist__link" href="/">Киви</a></li>
+            <li class="catalog-sublist__item"><a class="catalog-sublist__link" href="/">Лимоны</a></li>
+            <li class="catalog-sublist__item"><a class="catalog-sublist__link" href="/">Яблоки</a></li>
+            <li class="catalog-sublist__item"><a class="catalog-sublist__link" href="/">Груши</a></li>
+            <li class="catalog-sublist__item"><a class="catalog-sublist__link" href="/">Сливы</a></li>
+            <li class="catalog-sublist__item"><a class="catalog-sublist__link" href="/">Бананы</a></li>
+            <li class="catalog-sublist__item"><a class="catalog-sublist__link" href="/">Ананасы</a></li>
+            <li class="catalog-sublist__item"><a class="catalog-sublist__link" href="/">Киви</a></li>
+            <li class="catalog-sublist__item"><a class="catalog-sublist__link" href="/">Лимоны</a></li>
+            <li class="catalog-sublist__item"><a class="catalog-sublist__link" href="/">Яблоки</a></li>
+            <li class="catalog-sublist__item"><a class="catalog-sublist__link" href="/">Груши</a></li>
+            <li class="catalog-sublist__item"><a class="catalog-sublist__link" href="/">Сливы</a></li>
+            <li class="catalog-sublist__item"><a class="catalog-sublist__link" href="/">Бананы</a></li>
+            <li class="catalog-sublist__item"><a class="catalog-sublist__link" href="/">Ананасы</a></li>
+            <li class="catalog-sublist__item"><a class="catalog-sublist__link" href="/">Киви</a></li>
+            <li class="catalog-sublist__item"><a class="catalog-sublist__link" href="/">Лимоны</a></li>
+            <li class="catalog-sublist__item"><a class="catalog-sublist__link" href="/">Бананы</a></li>
+            <li class="catalog-sublist__item"><a class="catalog-sublist__link" href="/">Ананасы</a></li>
+            <li class="catalog-sublist__item"><a class="catalog-sublist__link" href="/">Киви</a></li>
+            <li class="catalog-sublist__item"><a class="catalog-sublist__link" href="/">Лимоны</a></li>
+          </ul>
+        </li>
+        <li class="menu-catalog__item"><img class="menu-catalog__icon" src="img/icon_catalog_vegetables.svg" alt="icon"/><span class="menu-catalog__name">Овощи</span>
+          <svg class="menu-catalog__arrow" viewBox="0 0 14 14">
+            <polygon class="st0" points="9.2,6.5 5.1,2.4 4.2,3.3 8.2,7.4 4.2,11.5 5.1,12.4 9.2,8.3 10.1,7.4 "></polygon>
+          </svg>
+          <ul class="menu-catalog__sublist catalog-sublist">
+            <li class="catalog-sublist__title"> <a class="catalog-sublist__name" href="/"></a></li>
+            <li class="catalog-sublist__item"><a class="catalog-sublist__link" href="/">Корнеплоды</a></li>
+            <li class="catalog-sublist__item"><a class="catalog-sublist__link" href="/">Огурцы</a></li>
+            <li class="catalog-sublist__item"><a class="catalog-sublist__link" href="/">Томаты</a></li>
+            <li class="catalog-sublist__item"><a class="catalog-sublist__link" href="/">Перец</a></li>
+            <li class="catalog-sublist__item"><a class="catalog-sublist__link" href="/">Кабачки</a></li>
+            <li class="catalog-sublist__item"><a class="catalog-sublist__link" href="/">Зелень</a></li>
+            <li class="catalog-sublist__item"><a class="catalog-sublist__link" href="/">Огурцы</a></li>
+            <li class="catalog-sublist__item"><a class="catalog-sublist__link" href="/">Корнеплоды</a></li>
+            <li class="catalog-sublist__item"><a class="catalog-sublist__link" href="/">Огурцы</a></li>
+            <li class="catalog-sublist__item"><a class="catalog-sublist__link" href="/">Томаты</a></li>
+            <li class="catalog-sublist__item"><a class="catalog-sublist__link" href="/">Перец</a></li>
+            <li class="catalog-sublist__item"><a class="catalog-sublist__link" href="/">Кабачки</a></li>
+            <li class="catalog-sublist__item"><a class="catalog-sublist__link" href="/">Зелень</a></li>
+            <li class="catalog-sublist__item"><a class="catalog-sublist__link" href="/">Огурцы</a></li>
+            <li class="catalog-sublist__item"><a class="catalog-sublist__link" href="/">Томаты</a></li>
+            <li class="catalog-sublist__item"><a class="catalog-sublist__link" href="/">Перец</a></li>
+            <li class="catalog-sublist__item"><a class="catalog-sublist__link" href="/">Кабачки</a></li>
+            <li class="catalog-sublist__item"><a class="catalog-sublist__link" href="/">Зелень</a></li>
+            <li class="catalog-sublist__item"><a class="catalog-sublist__link" href="/">Огурцы</a></li>
+          </ul>
+        </li>
+        <li class="menu-catalog__item"><img class="menu-catalog__icon" src="img/icon_catalog_berry.svg" alt="icon"/><span class="menu-catalog__name">Ягоды</span>
+          <svg class="menu-catalog__arrow" viewBox="0 0 14 14">
+            <polygon class="st0" points="9.2,6.5 5.1,2.4 4.2,3.3 8.2,7.4 4.2,11.5 5.1,12.4 9.2,8.3 10.1,7.4 "></polygon>
+          </svg>
+          <ul class="menu-catalog__sublist catalog-sublist">
+            <li class="catalog-sublist__title"> <a class="catalog-sublist__name" href="/"></a></li>
+            <li class="catalog-sublist__item"><a class="catalog-sublist__link" href="/">Корнеплоды</a></li>
+            <li class="catalog-sublist__item"><a class="catalog-sublist__link" href="/">Огурцы</a></li>
+            <li class="catalog-sublist__item"><a class="catalog-sublist__link" href="/">Томаты</a></li>
+            <li class="catalog-sublist__item"><a class="catalog-sublist__link" href="/">Перец</a></li>
+            <li class="catalog-sublist__item"><a class="catalog-sublist__link" href="/">Кабачки</a></li>
+            <li class="catalog-sublist__item"><a class="catalog-sublist__link" href="/">Зелень</a></li>
+            <li class="catalog-sublist__item"><a class="catalog-sublist__link" href="/">Огурцы</a></li>
+            <li class="catalog-sublist__item"><a class="catalog-sublist__link" href="/">Корнеплоды</a></li>
+            <li class="catalog-sublist__item"><a class="catalog-sublist__link" href="/">Огурцы</a></li>
+            <li class="catalog-sublist__item"><a class="catalog-sublist__link" href="/">Томаты</a></li>
+            <li class="catalog-sublist__item"><a class="catalog-sublist__link" href="/">Перец</a></li>
+            <li class="catalog-sublist__item"><a class="catalog-sublist__link" href="/">Кабачки</a></li>
+            <li class="catalog-sublist__item"><a class="catalog-sublist__link" href="/">Зелень</a></li>
+            <li class="catalog-sublist__item"><a class="catalog-sublist__link" href="/">Огурцы</a></li>
+          </ul>
+        </li>
+        <li class="menu-catalog__item"><img class="menu-catalog__icon" src="img/icon_catalog_grocery.svg" alt="icon"/><span class="menu-catalog__name">Бакалея</span>
+          <svg class="menu-catalog__arrow" viewBox="0 0 14 14">
+            <polygon class="st0" points="9.2,6.5 5.1,2.4 4.2,3.3 8.2,7.4 4.2,11.5 5.1,12.4 9.2,8.3 10.1,7.4 "></polygon>
+          </svg>
+          <ul class="menu-catalog__sublist catalog-sublist">
+            <li class="catalog-sublist__title"> <a class="catalog-sublist__name" href="/"></a></li>
+            <li class="catalog-sublist__item"><a class="catalog-sublist__link" href="/">Корнеплоды</a></li>
+            <li class="catalog-sublist__item"><a class="catalog-sublist__link" href="/">Огурцы</a></li>
+            <li class="catalog-sublist__item"><a class="catalog-sublist__link" href="/">Томаты</a></li>
+            <li class="catalog-sublist__item"><a class="catalog-sublist__link" href="/">Перец</a></li>
+            <li class="catalog-sublist__item"><a class="catalog-sublist__link" href="/">Кабачки</a></li>
+            <li class="catalog-sublist__item"><a class="catalog-sublist__link" href="/">Зелень</a></li>
+            <li class="catalog-sublist__item"><a class="catalog-sublist__link" href="/">Огурцы</a></li>
+            <li class="catalog-sublist__item"><a class="catalog-sublist__link" href="/">Корнеплоды</a></li>
+            <li class="catalog-sublist__item"><a class="catalog-sublist__link" href="/">Огурцы</a></li>
+            <li class="catalog-sublist__item"><a class="catalog-sublist__link" href="/">Томаты</a></li>
+            <li class="catalog-sublist__item"><a class="catalog-sublist__link" href="/">Перец</a></li>
+            <li class="catalog-sublist__item"><a class="catalog-sublist__link" href="/">Кабачки</a></li>
+            <li class="catalog-sublist__item"><a class="catalog-sublist__link" href="/">Зелень</a></li>
+            <li class="catalog-sublist__item"><a class="catalog-sublist__link" href="/">Огурцы</a></li>
+          </ul>
+        </li>
+        <li class="menu-catalog__item"><img class="menu-catalog__icon" src="img/icon_catalog_other.svg" alt="icon"/><span class="menu-catalog__name">Другое</span>
+          <svg class="menu-catalog__arrow" viewBox="0 0 14 14">
+            <polygon class="st0" points="9.2,6.5 5.1,2.4 4.2,3.3 8.2,7.4 4.2,11.5 5.1,12.4 9.2,8.3 10.1,7.4 "></polygon>
+          </svg>
+          <ul class="menu-catalog__sublist catalog-sublist">
+            <li class="catalog-sublist__title"> <a class="catalog-sublist__name" href="/"></a></li>
+            <li class="catalog-sublist__item"><a class="catalog-sublist__link" href="/">Корнеплоды</a></li>
+            <li class="catalog-sublist__item"><a class="catalog-sublist__link" href="/">Огурцы</a></li>
+            <li class="catalog-sublist__item"><a class="catalog-sublist__link" href="/">Томаты</a></li>
+            <li class="catalog-sublist__item"><a class="catalog-sublist__link" href="/">Перец</a></li>
+            <li class="catalog-sublist__item"><a class="catalog-sublist__link" href="/">Кабачки</a></li>
+            <li class="catalog-sublist__item"><a class="catalog-sublist__link" href="/">Зелень</a></li>
+            <li class="catalog-sublist__item"><a class="catalog-sublist__link" href="/">Огурцы</a></li>
+            <li class="catalog-sublist__item"><a class="catalog-sublist__link" href="/">Корнеплоды</a></li>
+            <li class="catalog-sublist__item"><a class="catalog-sublist__link" href="/">Огурцы</a></li>
+            <li class="catalog-sublist__item"><a class="catalog-sublist__link" href="/">Томаты</a></li>
+            <li class="catalog-sublist__item"><a class="catalog-sublist__link" href="/">Перец</a></li>
+            <li class="catalog-sublist__item"><a class="catalog-sublist__link" href="/">Кабачки</a></li>
+            <li class="catalog-sublist__item"><a class="catalog-sublist__link" href="/">Зелень</a></li>
+            <li class="catalog-sublist__item"><a class="catalog-sublist__link" href="/">Огурцы</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <div class="contacts-page overflow-hidden">
+      <section class="contacts">
+        <div class="contacts__map">
+          <div id="map"></div>
+          <button class="contacts__button button-green">Проложить маршрут</button>
+        </div>
+        <div class="contacts__info"> 
+          <h1 class="contacts__title title">Контакты</h1>
+          <div class="contacts__item"><b class="contacts__tagtitle">Служба поддержки клиентов</b><a class="contacts__val" href="tel:+71111111111">+495 123-45-67</a></div>
+          <div class="contacts__item"><b class="contacts__tagtitle">Почта</b><a class="contacts__val" href="mailto:hello@salat.ru">hello@salat.ru</a>
+            <p class="contacts__clarification">Написать отзыв, пожелание, задать вопрос</p><a class="contacts__val" href="mailto:rabota@salat.ru">rabota@salat.ru</a>
+            <p class="contacts__clarification">Отдел по работе с персоналом</p><a class="contacts__val" href="mailto:smi@salat.ru">smi@salat.ru</a>
+            <p class="contacts__clarification">Отдел по работе с общественностью</p>
+          </div>
+          <div class="contacts__item"><b class="contacts__tagtitle">Свяжитесь с нами в соцсетях</b>
+            <div class="contacts__socials socials"><a class="socials__link" href="/">
+                <svg viewBox="0 0 40 40">
+                  <circle class="st0" cx="20" cy="20" r="17.5"></circle>
+                  <path class="st1" d="M17.8,28.7h3.5v-8.8h2.4L24,17h-2.7c0,0,0-1.1,0-1.7c0-0.7,0.1-1,0.8-1c0.5,0,1.9,0,1.9,0v-3									c0,0-2,0-2.4,0c-2.6,0-3.8,1.1-3.8,3.3c0,1.9,0,2.3,0,2.3H16v3h1.8V28.7z"></path>
+                </svg></a><a class="socials__link" href="/">
+                <svg viewBox="0 0 40 40">
+                  <circle class="st0" cx="20" cy="20" r="17.5"></circle>
+                  <g>
+                    <path class="st1" d="M20,13c2.3,0,2.6,0,3.5,0c0.8,0,1.3,0.2,1.6,0.3c0.4,0.2,0.7,0.3,1,0.6c0.3,0.3,0.5,0.6,0.6,1										c0.1,0.3,0.3,0.8,0.3,1.6c0,0.9,0,1.2,0,3.5c0,2.3,0,2.6,0,3.5c0,0.8-0.2,1.3-0.3,1.6c-0.2,0.4-0.3,0.7-0.6,1										c-0.3,0.3-0.6,0.5-1,0.6c-0.3,0.1-0.8,0.3-1.6,0.3c-0.9,0-1.2,0-3.5,0c-2.3,0-2.6,0-3.5,0c-0.8,0-1.3-0.2-1.6-0.3										c-0.4-0.2-0.7-0.3-1-0.6c-0.3-0.3-0.5-0.6-0.6-1c-0.1-0.3-0.3-0.8-0.3-1.6c0-0.9,0-1.2,0-3.5c0-2.3,0-2.6,0-3.5										c0-0.8,0.2-1.3,0.3-1.6c0.2-0.4,0.3-0.7,0.6-1c0.3-0.3,0.6-0.5,1-0.6c0.3-0.1,0.8-0.3,1.6-0.3C17.4,13,17.7,13,20,13 M20,11.5										c-2.3,0-2.6,0-3.5,0.1c-0.9,0-1.5,0.2-2.1,0.4c-0.6,0.2-1,0.5-1.5,1c-0.5,0.5-0.8,1-1,1.5c-0.2,0.5-0.4,1.2-0.4,2.1										c0,0.9-0.1,1.2-0.1,3.5s0,2.6,0.1,3.5c0,0.9,0.2,1.5,0.4,2.1c0.2,0.6,0.5,1,1,1.5c0.5,0.5,1,0.8,1.5,1c0.5,0.2,1.2,0.4,2.1,0.4										c0.9,0,1.2,0.1,3.5,0.1c2.3,0,2.6,0,3.5-0.1c0.9,0,1.5-0.2,2.1-0.4c0.6-0.2,1-0.5,1.5-1c0.5-0.5,0.8-1,1-1.5										c0.2-0.5,0.4-1.2,0.4-2.1c0-0.9,0.1-1.2,0.1-3.5s0-2.6-0.1-3.5c0-0.9-0.2-1.5-0.4-2.1c-0.2-0.6-0.5-1-1-1.5c-0.5-0.5-1-0.8-1.5-1										c-0.5-0.2-1.2-0.4-2.1-0.4C22.6,11.5,22.3,11.5,20,11.5"></path>
+                    <path class="st1" d="M20,15.6c-2.4,0-4.4,2-4.4,4.4s2,4.4,4.4,4.4c2.4,0,4.4-2,4.4-4.4S22.4,15.6,20,15.6 M20,22.8										c-1.6,0-2.8-1.3-2.8-2.8c0-1.6,1.3-2.8,2.8-2.8c1.6,0,2.8,1.3,2.8,2.8C22.8,21.6,21.6,22.8,20,22.8"></path>
+                    <path class="st1" d="M25.6,15.4c0,0.6-0.5,1-1,1c-0.6,0-1-0.5-1-1c0-0.6,0.5-1,1-1C25.1,14.4,25.6,14.9,25.6,15.4"></path>
+                  </g>
+                </svg></a><a class="socials__link" href="/">
+                <svg viewBox="0 0 40 40">
+                  <circle class="st0" cx="20" cy="20" r="17.5"></circle>
+                  <path class="st1" d="M28.8,25.1c-0.8-1.8-2.5-3.3-3.5-4.2c-0.2-0.2-0.3-0.5-0.1-0.8c1.2-1.4,2.2-3.1,3.3-5.1									c0.2-0.4-0.1-0.8-0.5-0.8h-3c-1.3,2.3-2.7,4.6-3.7,5.4c-0.3,0.2-0.7,0-0.7-0.3V15v-0.4c0-0.2-0.2-0.4-0.4-0.4h-3.6									c-0.4,0-0.6,0.4-0.3,0.7c0,0,0,0,0.1,0.1c0.5,0.5,0.7,1.2,0.7,1.9v3.3c0,0.3-0.3,0.5-0.6,0.4c-1.7-0.8-2.9-3.6-3.8-6.2									c0-0.1-0.1-0.2-0.3-0.2H9.6c-0.2,0-0.4,0.2-0.4,0.5c0.1,1.1,0.4,2.1,0.8,3.2c1.3,3.4,4.1,6.8,7.7,7.8c0.6,0.2,3.1,0.8,3.1-0.4v-2.3									l0,0c0.6-1.5,2.6,0.9,4.5,3h3C28.7,25.9,29,25.4,28.8,25.1z"></path>
+                </svg></a></div>
+          </div>
+          <div class="contacts__item"><b class="contacts__tagtitle">Юридическая информация</b>
+            <p class="contacts__val">ОГРН 1166952059284<br/>ИНН 6910023032<br/>КПП 501001001<br/>Юр. адрес: 141980, Московская обл., г. Дубна, ул. Строителей, дом № 12, помещение I/2.</p>
+          </div>
+        </div>
+      </section>
+      <!-- ======================================== ИНТЕРНЕТ МАГАЗИН СВЕЖИХ И ЗДОРОВЫХ ПРОДУКТОВ-->
+      <section class="info"> <img class="info__vegetables" src="img/vegetables-2.webp" alt="vegetables"/>
+        <div class="center-box"> 
+          <h3 class="title info__title">Интернет магазин свежих и здоровых продуктов</h3>
+        </div><img class="info__img" src="img/banner.webp" alt="banner"/>
+        <div class="info__content content-info">
+          <div class="content-info__col"> 
+            <div class="content-info__title elem-title">Какой то заголовок</div>
+            <p>Мы - команда, имеющая огромный опыт в плодово-овощном бизнесе. С 2002 г. мы занимаемся импортом ягод, фруктов, овощей, грибов, трав, орехов из Европы, Африки, Азии с целью дальнейшего снабжения продовольственных магазинов и предприятий общепита. На данном этапе у нас есть собственная логистическая цепочка, включающая специализированный транспорт, плодово-овощное хранилище и надежных, проверенных временем, поставщиков качественной продукции. В нашем магазине можно:</p>
+            <ul>
+              <li><a href="/">Купить фрукты</a></li>
+              <li><a href="/">Купить овощи</a></li>
+              <li><a href="/">Купить фрукты и овощи оптом</a></li>
+              <li><a href="/">Заказать фрукты в офис</a></li>
+              <li><a href="/">Купить фрукты и овощи поштучно</a></li>
+            </ul>
+          </div>
+          <div class="content-info__col"> 
+            <div class="content-info__title elem-title">Какой то заголовок</div>
+            <p>Мы осуществляем доставку овощей собственной курьерской службой. Почему стоит покупать именно у нас:</p>
+            <ul>
+              <li><a href="/">У нас самый свежий товар</a></li>
+              <li><a href="/">У нас низкие цены</a></li>
+              <li><a href="/">У нас самые выгодные условия на покупку овощей и фруктов оптом</a></li>
+            </ul>
+          </div>
+          <div class="content-info__col"> 
+            <div class="content-info__title elem-title">Какой то заголовок</div>
+            <p>Цены указаны за 1 кг или упаковку, с учетом НДС. В нашем магазине не обязательно регистрироваться. Если у вас возникают трудности при формировании заказа - вы можете оформить покупку овощей и фруктов по телефону. Мы принимаем наличные. Для юр лиц мы выставляем счет на оплату. Условия для оптовиков представлены здесь.</p>
+          </div>
+        </div>
+      </section>
+      <!-- ======================================== ПОЧЕМУ САЛАТ-->
+      <section class="advantages"><img class="advantages__vegetables" src="img/vegetables-3.webp" alt="vegetables"/>
+        <div class="center-box">
+          <h4 class="title advantages__title">Почему Салат?</h4>
+        </div>
+        <div class="advantages__items"> 
+                <article class="news__item new"> 
+                  <figure class="new__img"> <img src="img/advantage-1.webp" alt="new"/></figure>
+                  <div class="new__info"> 
+                    <h6 class="new__title elem-title">Ручной сбор урожая</h6>
+                    <p class="new__text">Собираем только самые свежие и спелые фрукты и овощи. Гарантируем, что в вашем заказе не будет ни одной не свежей ягоды, фрукта или овоща.</p>
+                  </div>
+                </article>
+                <article class="news__item new"> 
+                  <figure class="new__img"> <img src="img/advantage-2.webp" alt="new"/></figure>
+                  <div class="new__info"> 
+                    <h6 class="new__title elem-title">Удобная доставка</h6>
+                    <p class="new__text">Курьер приедет к вам в удобное время и место.</p>
+                  </div>
+                </article>
+                <article class="news__item new"> 
+                  <figure class="new__img"> <img src="img/advantage-3.webp" alt="new"/></figure>
+                  <div class="new__info"> 
+                    <h6 class="new__title elem-title">Бережное хранение</h6>
+                    <p class="new__text">Аккуратно упаковываем нежные ягоды и фрукты. Гарантируем, что ни одна ягодка не помнется</p>
+                  </div>
+                </article>
+                <article class="news__item new"> 
+                  <figure class="new__img"> <img src="img/advantage-4.webp" alt="new"/></figure>
+                  <div class="new__info"> 
+                    <h6 class="new__title elem-title">Нет минимального заказа</h6>
+                    <p class="new__text">Мы не ограничиваем вас суммой заказа. Привезем столько, сколько вы хотите - хоть маленькую корзинку, хоть ящик.</p>
+                  </div>
+                </article>
+        </div>
+        <div class="center-box"> 
+          <button class="button-red advantages__more">заказать</button>
+        </div><img class="advantages__decor decor" src="img/decor-2.webp" alt="decor"/><img class="mini-logo" src="img/circle-logo.png" alt="mini-logo"/>
+      </section>
+      <!-- ======================================== ПОДПИСКА-->
+      <section class="subscription"> 
+        <div class="subscription__title">
+          <h5>Подписаться<br/>на новости</h5>
+        </div>
+        <form class="subscription__form" action="#">
+          <input class="subscription__input" type="text" placeholder="Email"/>
+          <button class="subscription__button">подписаться</button>
+        </form>
+      </section>
+    </div>
+    <!-- ======================================== FOOTER-->
+    <footer class="footer"> 
+      <figure class="footer__logo"> <img src="img/Logo-footer.png" alt="logo"/>
+        <figcaption>Интернет магазин свежих<br/>и здоровых продуктов</figcaption>
+      </figure>
+      <div class="footer__menus">
+        <div class="footer__col">
+          <h6 class="footer__title">Заказать</h6>
+          <div class="footer__info">
+            <p>Москва и Московская область</p>
+            <p>8 (495) 123-45-67</p>
+            <p>Ежедневно с 9:00 до 21:00</p>
+            <p>zakaz@salat.ru</p>
+          </div>
+        </div>
+        <div class="footer__col footer-menu">
+          <h6 class="footer__title">Каталог</h6>
+          <ul class="footer-menu__list">
+            <li class="footer-menu__item"><img class="footer-menu__icon" src="img/list-item-arrow.png" alt="arrow"/><a class="footer-menu__link" href="/">Фрукты</a></li>
+            <li class="footer-menu__item"><img class="footer-menu__icon" src="img/list-item-arrow.png" alt="arrow"/><a class="footer-menu__link" href="/">Овощи и зелень</a></li>
+            <li class="footer-menu__item"><img class="footer-menu__icon" src="img/list-item-arrow.png" alt="arrow"/><a class="footer-menu__link" href="/">Фермерские продукты</a></li>
+            <li class="footer-menu__item"><img class="footer-menu__icon" src="img/list-item-arrow.png" alt="arrow"/><a class="footer-menu__link" href="/">Натуральные продукты</a></li>
+            <li class="footer-menu__item"><img class="footer-menu__icon" src="img/list-item-arrow.png" alt="arrow"/><a class="footer-menu__link" href="/">Приправы и пряности</a></li>
+            <li class="footer-menu__item"><img class="footer-menu__icon" src="img/list-item-arrow.png" alt="arrow"/><a class="footer-menu__link" href="/">Рыбы и морепродукты</a></li>
+          </ul>
+        </div>
+        <div class="footer__col footer-menu">
+          <h6 class="footer__title">Полезное</h6>
+          <ul class="footer-menu__list">
+            <li class="footer-menu__item"><img class="footer-menu__icon" src="img/list-item-arrow.png" alt="arrow"/><a class="footer-menu__link" href="/">Готовые наборы</a></li>
+            <li class="footer-menu__item"><img class="footer-menu__icon" src="img/list-item-arrow.png" alt="arrow"/><a class="footer-menu__link" href="/">Подарочные корзины</a></li>
+            <li class="footer-menu__item"><img class="footer-menu__icon" src="img/list-item-arrow.png" alt="arrow"/><a class="footer-menu__link" href="/">Фрукты в офис</a></li>
+            <li class="footer-menu__item"><img class="footer-menu__icon" src="img/list-item-arrow.png" alt="arrow"/><a class="footer-menu__link" href="/">Акции</a></li>
+            <li class="footer-menu__item"><img class="footer-menu__icon" src="img/list-item-arrow.png" alt="arrow"/><a class="footer-menu__link" href="/">Программы лояльности</a></li>
+          </ul>
+        </div>
+        <div class="footer__col footer-menu">
+          <h6 class="footer__title">Информация</h6>
+          <ul class="footer-menu__list">
+            <li class="footer-menu__item"><img class="footer-menu__icon" src="img/list-item-arrow.png" alt="arrow"/><a class="footer-menu__link" href="/">О магазине</a></li>
+            <li class="footer-menu__item"><img class="footer-menu__icon" src="img/list-item-arrow.png" alt="arrow"/><a class="footer-menu__link" href="/">Сотрудничество</a></li>
+            <li class="footer-menu__item"><img class="footer-menu__icon" src="img/list-item-arrow.png" alt="arrow"/><a class="footer-menu__link" href="/">Доставки и оплата</a></li>
+            <li class="footer-menu__item"><img class="footer-menu__icon" src="img/list-item-arrow.png" alt="arrow"/><a class="footer-menu__link" href="/">Пользовательское соглашение</a></li>
+            <li class="footer-menu__item"><img class="footer-menu__icon" src="img/list-item-arrow.png" alt="arrow"/><a class="footer-menu__link" href="/">Политика конфиденциальности</a></li>
+            <li class="footer-menu__item"><img class="footer-menu__icon" src="img/list-item-arrow.png" alt="arrow"/><a class="footer-menu__link" href="/">Контакты</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <div class="dev"> <span class="dev__rights"> © Все права защищены - Салат.ру  2021</span>
+      <div class="dev__socials socials"><a class="socials__link" href="/">
+          <svg viewBox="0 0 40 40">
+            <circle class="st0" cx="20" cy="20" r="17.5"></circle>
+            <path class="st1" d="M17.8,28.7h3.5v-8.8h2.4L24,17h-2.7c0,0,0-1.1,0-1.7c0-0.7,0.1-1,0.8-1c0.5,0,1.9,0,1.9,0v-3				c0,0-2,0-2.4,0c-2.6,0-3.8,1.1-3.8,3.3c0,1.9,0,2.3,0,2.3H16v3h1.8V28.7z"></path>
+          </svg></a><a class="socials__link" href="/">
+          <svg viewBox="0 0 40 40">
+            <circle class="st0" cx="20" cy="20" r="17.5"></circle>
+            <g>
+              <path class="st1" d="M20,13c2.3,0,2.6,0,3.5,0c0.8,0,1.3,0.2,1.6,0.3c0.4,0.2,0.7,0.3,1,0.6c0.3,0.3,0.5,0.6,0.6,1					c0.1,0.3,0.3,0.8,0.3,1.6c0,0.9,0,1.2,0,3.5c0,2.3,0,2.6,0,3.5c0,0.8-0.2,1.3-0.3,1.6c-0.2,0.4-0.3,0.7-0.6,1					c-0.3,0.3-0.6,0.5-1,0.6c-0.3,0.1-0.8,0.3-1.6,0.3c-0.9,0-1.2,0-3.5,0c-2.3,0-2.6,0-3.5,0c-0.8,0-1.3-0.2-1.6-0.3					c-0.4-0.2-0.7-0.3-1-0.6c-0.3-0.3-0.5-0.6-0.6-1c-0.1-0.3-0.3-0.8-0.3-1.6c0-0.9,0-1.2,0-3.5c0-2.3,0-2.6,0-3.5					c0-0.8,0.2-1.3,0.3-1.6c0.2-0.4,0.3-0.7,0.6-1c0.3-0.3,0.6-0.5,1-0.6c0.3-0.1,0.8-0.3,1.6-0.3C17.4,13,17.7,13,20,13 M20,11.5					c-2.3,0-2.6,0-3.5,0.1c-0.9,0-1.5,0.2-2.1,0.4c-0.6,0.2-1,0.5-1.5,1c-0.5,0.5-0.8,1-1,1.5c-0.2,0.5-0.4,1.2-0.4,2.1					c0,0.9-0.1,1.2-0.1,3.5s0,2.6,0.1,3.5c0,0.9,0.2,1.5,0.4,2.1c0.2,0.6,0.5,1,1,1.5c0.5,0.5,1,0.8,1.5,1c0.5,0.2,1.2,0.4,2.1,0.4					c0.9,0,1.2,0.1,3.5,0.1c2.3,0,2.6,0,3.5-0.1c0.9,0,1.5-0.2,2.1-0.4c0.6-0.2,1-0.5,1.5-1c0.5-0.5,0.8-1,1-1.5					c0.2-0.5,0.4-1.2,0.4-2.1c0-0.9,0.1-1.2,0.1-3.5s0-2.6-0.1-3.5c0-0.9-0.2-1.5-0.4-2.1c-0.2-0.6-0.5-1-1-1.5c-0.5-0.5-1-0.8-1.5-1					c-0.5-0.2-1.2-0.4-2.1-0.4C22.6,11.5,22.3,11.5,20,11.5"></path>
+              <path class="st1" d="M20,15.6c-2.4,0-4.4,2-4.4,4.4s2,4.4,4.4,4.4c2.4,0,4.4-2,4.4-4.4S22.4,15.6,20,15.6 M20,22.8					c-1.6,0-2.8-1.3-2.8-2.8c0-1.6,1.3-2.8,2.8-2.8c1.6,0,2.8,1.3,2.8,2.8C22.8,21.6,21.6,22.8,20,22.8"></path>
+              <path class="st1" d="M25.6,15.4c0,0.6-0.5,1-1,1c-0.6,0-1-0.5-1-1c0-0.6,0.5-1,1-1C25.1,14.4,25.6,14.9,25.6,15.4"></path>
+            </g>
+          </svg></a><a class="socials__link" href="/">
+          <svg viewBox="0 0 40 40">
+            <circle class="st0" cx="20" cy="20" r="17.5"></circle>
+            <path class="st1" d="M28.8,25.1c-0.8-1.8-2.5-3.3-3.5-4.2c-0.2-0.2-0.3-0.5-0.1-0.8c1.2-1.4,2.2-3.1,3.3-5.1				c0.2-0.4-0.1-0.8-0.5-0.8h-3c-1.3,2.3-2.7,4.6-3.7,5.4c-0.3,0.2-0.7,0-0.7-0.3V15v-0.4c0-0.2-0.2-0.4-0.4-0.4h-3.6				c-0.4,0-0.6,0.4-0.3,0.7c0,0,0,0,0.1,0.1c0.5,0.5,0.7,1.2,0.7,1.9v3.3c0,0.3-0.3,0.5-0.6,0.4c-1.7-0.8-2.9-3.6-3.8-6.2				c0-0.1-0.1-0.2-0.3-0.2H9.6c-0.2,0-0.4,0.2-0.4,0.5c0.1,1.1,0.4,2.1,0.8,3.2c1.3,3.4,4.1,6.8,7.7,7.8c0.6,0.2,3.1,0.8,3.1-0.4v-2.3				l0,0c0.6-1.5,2.6,0.9,4.5,3h3C28.7,25.9,29,25.4,28.8,25.1z"></path>
+          </svg></a></div>
+      <div class="dev__scrum scrum"> <span class="scrum__text">Разработка и <br/>продвижение сайта</span><a href="/">	<img class="scrum__logo" src="img/logo-scrum.png" alt="logo-scrum"/></a></div>
+    </div>
+    <!-- ======================================== SCRIPTS-->
+    <!-- jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- fancybox-->
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <!-- inputmask-->
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/jquery.inputmask.bundle.js"></script>
+    <!-- slick slider-->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <!-- yandex map-->
+    <!-- <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>-->
+    <!-- scripts-->
+    <script src="js/main.js"></script>
+  </body>
+</html>
